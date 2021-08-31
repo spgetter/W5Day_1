@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="hero-section">
+    <h3 class="header-text">Review vehicle histories</h3>
+    <p class="header-text">
+        Photo by <a href="https://unsplash.com/@rstone_design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Ryan Stone </a> 
+        on <a href="https://unsplash.com/s/photos/mountain-road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Unsplash </a>
+    </p>
+</header>
+
+<div class="container">
+    <h3>Some vehicle details.</h3>
+    <ul class="list-group">
+        <li class="list-group-item"><img src="../../static/images/1980-Chevrolet-El-Camino.jpg">
+            Owned from 1985 to 2008. Actual color, "cream". Survived many collisions 
+            including being rear-ended by an 18-wheel truck and trailer.
+        </li>
+        <li class="list-group-item"><img src="../../static/images/ford_maverick.png">
+            Owned from 1985 to 1986. Commuter for school. Scared my mother enough that she got me the 
+            El Camino for a Christmas gift along with a $2500 loan.
+        </li>
+        <li class="list-group-item"><img src="../../static/images/ford_pinto_wagon.png">
+            Owned from 1987 to 1988. Abandoned by my best friend in front of my house. I gave him $50 and 
+            replaced the radiator as I had no vehicle after the El Camino had encountered an altercation. 
+            After the transmission failed, it was taken to the crusher and given it's proper burial.
+        </li>
+        <li class="list-group-item"><img src="../../static/images/2010-Mercedes-Benz-GL-Class.png">
+            Owned from 2017 to present. Driven 30000 miles in the first 6 months, then machanics started to fail. 
+            Repairs far in excess of the vehicle's worth. Now is a giant paper weight absorbing insurance and 
+            registration costs, but only $7000 left on the financing! 
+        </li>
+        <li class="list-group-item">
+            Vehicles owned but not shown include: 1989 Plymouth Hoizon, 1999 Chevrolet S-10 pickup, 
+            2001 Mercedes ML320, 2004 Saturn Vue, and 2007 Mazda 5
+        </li>
+
+        <!-- TODO: Add Access Token -->
+
+    </ul>
+</div>
+
+{% endblock content %}
