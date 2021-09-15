@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template
+from flask_login.utils import login_required
 
 """
     Note that in the below code,
@@ -17,5 +18,6 @@ def home():
     return render_template('index.html')
 
 @site.route('/history')
+@login_required
 def history():
     return render_template('history.html')

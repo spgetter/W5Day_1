@@ -1,0 +1,61 @@
+
+{
+    "make" : "Chevrolet",
+    "model" : "El Camino",
+    "year" : "1980",
+    "price" : 2500.00,
+    "seats" : "cloth",
+    "transmission" : "manual",
+    "engine" : "Buick 3.1l",
+    "dimensions" : "72 inches wide, 55.5 inches high and 202 inches long",
+    "weight" : "3428.2 lb",
+    "MSRP" : 5911.00
+}
+{
+    "make" : "Ford",
+    "model" : "Maverick",
+    "year" : "1973",
+    "price" : 300.00,
+    "seats" : "cloth",
+    "transmission" : "automatic",
+    "engine" : "200 CID I6",
+    "dimensions" : "70.5 inches wide, 53.5 inches high and 179.4 inches long",
+    "weight" : "2909 lb",
+    "MSRP" : 2248.00
+}
+{
+    "make" : "Ford",
+    "model" : "Pinto Wagon",
+    "year" : "1974",
+    "price" : 50.00,
+    "seats" : "cloth",
+    "transmission" : "automatic",
+    "engine" : "122 CID V4",
+    "dimensions" : "70.0 inches wide, 52 inches high and 179 inches long",
+    "weight" : "2576 lb",
+    "MSRP" : 2770.00
+}
+{
+    "make" : "Mercedes Benz",
+    "model" : "GL350 Bluetec",
+    "year" : "2010",
+    "price" : 21080.42,
+    "seats" : "leather",
+    "transmission" : "automatic",
+    "engine" : "3.0l V6 Diesel",
+    "dimensions" : "76.4 inches wide, 72.4 inches high and 200.6 inches long",
+    "weight" : "5423 lb",
+    "MSRP" : 59950.00
+}
+{
+    "make" : "Deleteable",
+    "model" : "test",
+    "year" : "test",
+    "price" : 2,
+    "seats" : "test",
+    "transmission" : "test",
+    "engine" : "test",
+    "dimensions" : "test",
+    "weight" : "test",
+    "MSRP" : 3
+}

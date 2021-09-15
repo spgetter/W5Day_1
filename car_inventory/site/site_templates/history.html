@@ -3,6 +3,7 @@
 {% block content %}
 
 <header class="hero-section">
+    <h3 class="header-text">Hello {{ current_user.email }} !</h3>
     <h3 class="header-text">Review vehicle histories</h3>
     <p class="header-text">
         Photo by <a href="https://unsplash.com/@rstone_design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Ryan Stone </a> 
@@ -11,6 +12,11 @@
 </header>
 
 <div class="container">
+    <h3>Your Details:</h3>
+    <ul class="list-group">
+        <li class="list-group-item"> Email: {{ current_user.email }} </li>
+        <li class="list-group-item"> Token: {{ current_user.token }} </li>
+    </ul>
     <h3>Some vehicle details.</h3>
     <ul class="list-group">
         <li class="list-group-item"><img src="../../static/images/1980-Chevrolet-El-Camino.jpg">
@@ -35,8 +41,6 @@
             Vehicles owned but not shown include: 1989 Plymouth Hoizon, 1999 Chevrolet S-10 pickup, 
             2001 Mercedes ML320, 2004 Saturn Vue, and 2007 Mazda 5
         </li>
-
-        <!-- TODO: Add Access Token -->
 
     </ul>
 </div>
