@@ -59,7 +59,7 @@ class User(db.Model, UserMixin):
 class Car(db.Model):
     id = db.Column(db.String, primary_key = True)
     make = db.Column(db.String(150))
-    _model = db.Column(db.String(200))
+    model = db.Column(db.String(200))
     year = db.Column(db.String(10))
     price = db.Column(db.Numeric(precision=10, scale=2))
     seats = db.Column(db.String(150), nullable = True)
@@ -70,10 +70,10 @@ class Car(db.Model):
     MSRP = db.Column(db.Numeric(precision=10,scale=2))
     user_token = db.Column(db.String, db.ForeignKey('user.token'), nullable = False)
 
-    def __init__(self,make,_model,year,price,seats,transmission,engine,dimensions,weight,MSRP,user_token,id=''):
+    def __init__(self,make,model,year,price,seats,transmission,engine,dimensions,weight,MSRP,user_token,id=''):
         self.id = self.set_id()
         self.make = make
-        self._model = _model
+        self.model = model
         self.year = year
         self.price = price
         self.seats = seats
@@ -93,7 +93,7 @@ class Car(db.Model):
 # Creation of api schema via the marshmallow object
 class CarSchema(ma.Schema):
     class Meta:
-        fields = ['id', 'make','_model','year','price','seats','transmission', 'engine', 'dimensions','weight','MSRP']
+        fields = ['id', 'make','model','year','price','seats','transmission', 'engine', 'dimensions','weight','MSRP']
 
 car_schema = CarSchema()
 cars_schema = CarSchema(many=True)
